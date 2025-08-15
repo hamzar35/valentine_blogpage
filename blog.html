@@ -1,0 +1,131 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechBlog - Latest in Web Development</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#">TechBlog</a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="search-box">
+                    <input type="text" placeholder="Search...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="hamburger" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="featured-post">
+            <div class="container">
+                <article class="featured-article">
+                    <div class="featured-image">
+                        <img src="https://source.unsplash.com/random/1200x600/?webdevelopment" alt="Featured Post">
+                    </div>
+                    <div class="featured-content">
+                        <span class="category featured-category">JavaScript</span>
+                        <h1>The Future of React in 2025: What You Need to Know</h1>
+                        <div class="meta">
+                            <span class="author">By Sarah Johnson</span>
+                            <span class="date">June 15, 2025</span>
+                            <span class="read-time">8 min read</span>
+                        </div>
+                        <p class="excerpt">Explore the latest updates in React 18, new features coming in future releases, and how these changes will impact your development workflow. Learn about concurrent rendering, server components, and more...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="blog-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Latest Articles</h2>
+                    <div class="category-filter">
+                        <button class="filter-btn active" data-category="all">All</button>
+                        <button class="filter-btn" data-category="html">HTML</button>
+                        <button class="filter-btn" data-category="css">CSS</button>
+                        <button class="filter-btn" data-category="javascript">JavaScript</button>
+                        <button class="filter-btn" data-category="uiux">UI/UX</button>
+                    </div>
+                </div>
+
+                <div class="blog-grid" id="blog-grid">
+                    <!-- Posts will be dynamically inserted here by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>TechBlog</h3>
+                    <p>Your source for the latest in web development, design, and technology trends.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#" data-category="html">HTML</a></li>
+                        <li><a href="#" data-category="css">CSS</a></li>
+                        <li><a href="#" data-category="javascript">JavaScript</a></li>
+                        <li><a href="#" data-category="uiux">UI/UX</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Subscribe</h3>
+                    <p>Get the latest posts delivered to your inbox.</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechBlog. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
